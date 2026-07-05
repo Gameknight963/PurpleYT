@@ -1,0 +1,47 @@
+/* ==UserStyle==
+@name           purple yt
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    cool purple gradient yt theme with some extra blur
+@author         gameknight963
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.youtube.com") {
+    :root {
+    --bg-color: linear-gradient(rgba(47, 0, 72, .35), rgba(18, 0, 28, .35));
+    --bg-color-raised: linear-gradient(rgba(20, 1, 55, .45), rgba(12, 0, 28, .38));
+    }
+    
+    .ytp-popup,
+    ytd-multi-page-menu-renderer.style-scope,
+    #frosted-glass,
+    #guide-content,
+    #background
+    {
+        background: var(--bg-color) !important;
+        backdrop-filter: blur(5px) !important;
+    }
+    
+    body > ytd-app:nth-child(4),
+    #page-header-container,
+    .ytSearchboxComponentInputBox
+    {
+        background: var(--bg-color-raised) !important;
+    }
+    
+    ytd-post-renderer,
+    ytd-app
+    {
+        background: var(--bg-color) !important;
+    }
+    ytd-simple-menu-header-renderer.style-scope,
+    #contentContainer,
+    #page-header,
+    #tabs-inner-container,
+    #tabs-container
+    {
+        background: transparent !important;
+    }
+    
+    ytd-menu-renderer.ytd-watch-metadata > div:nth-child(2) > yt-button-view-model:nth-child(1) { display: none }
+}
