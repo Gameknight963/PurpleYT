@@ -17,7 +17,6 @@
     #frosted-glass,
     #guide-content,
     #background,
-    div[role="listbox"],
     .ytContextualSheetLayoutHost
     {
         background: var(--bg-color) !important;
@@ -26,7 +25,10 @@
     
     body > ytd-app:nth-child(4),
     #page-header-container,
-    .ytSearchboxComponentInputBox
+    .ytSearchboxComponentInputBox,
+    ytd-video-renderer,
+    tp-yt-app-toolbar,
+    ytd-menu-popup-renderer
     {
         background: var(--bg-color-raised) !important;
     }
