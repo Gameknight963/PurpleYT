@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           purple yt
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.2.0
 @description    cool purple gradient yt theme with some extra blur
 @author         gameknight963
 ==/UserStyle== */
@@ -17,7 +17,10 @@
     #frosted-glass,
     #guide-content,
     #background,
-    .ytContextualSheetLayoutHost
+    .ytContextualSheetLayoutHost,
+    #i1,
+    tp-yt-paper-dialog,
+    div.ytd-item-section-renderer
     {
         background: var(--bg-color) !important;
         backdrop-filter: blur(5px) !important;
@@ -28,7 +31,10 @@
     .ytSearchboxComponentInputBox,
     ytd-video-renderer,
     tp-yt-app-toolbar,
-    ytd-menu-popup-renderer
+    ytd-menu-popup-renderer,
+    ytd-engagement-panel-section-list-renderer.style-scope:nth-child(8) > div:nth-child(2),
+    ytd-engagement-panel-section-list-renderer.style-scope:nth-child(8) > div:nth-child(1) > ytd-engagement-panel-title-header-renderer:nth-child(1) > div:nth-child(3),
+    #bar
     {
         background: var(--bg-color-raised) !important;
     }
@@ -42,7 +48,9 @@
     #contentContainer,
     #page-header,
     #tabs-inner-container,
-    #tabs-container
+    #tabs-container,
+    div.ytd-engagement-panel-title-header-renderer,
+    div.ytd-engagement-panel-section-list-renderer
     {
         background: transparent !important;
     }
